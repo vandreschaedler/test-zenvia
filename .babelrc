@@ -1,0 +1,20 @@
+{
+  "env": {
+    "development": {
+      "sourceMaps": true,
+      "retainLines": true
+    },
+  },
+  "presets": [
+    ["@babel/env",
+    {
+      "targets": {
+        "node": 4
+      },
+      "exclude": ["transform-regenerator"]
+    }]
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread"
+   ]
+}

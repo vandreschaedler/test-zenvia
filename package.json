@@ -1,0 +1,45 @@
+{
+  "name": "test-zenvia",
+  "version": "1.0.0",
+  "description": "Zenvia's backend test",
+  "main": "server.js",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "sinon": "^7.5.0",
+    "sinon-chai": "^3.3.0",
+    "sinon-stub-promise": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^6.2.2"
+  },
+  "scripts": {
+    "test": "mocha --require @babel/register --recursive ./tests/**/*.spec.js --bail",
+    "start": "nodemon --ignore ./test --exec babel-node ./server.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vandreschaedler/test-zenvia.git"
+  },
+  "keywords": [
+    "zenvia",
+    "socket",
+    "node"
+  ],
+  "author": "Vandré A. Schaedler (vandreschaedler@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vandreschaedler/test-zenvia/issues"
+  },
+  "homepage": "https://github.com/vandreschaedler/test-zenvia#readme"
+}
